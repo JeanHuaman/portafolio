@@ -10,6 +10,7 @@
     --text-color : #222;
     --font: 'Noto Sans JP', sans-serif;
     --max-width:1200px;
+    --header-height:4rem; 
 }
 
 /****************Reset*********************/
@@ -32,7 +33,7 @@ color: var(--text-color);
 }
 
 a{
-    list-style: none;
+    text-decoration: none;
 }
 
 h1,h2,h3,h4,h5,h6,body{
@@ -64,6 +65,9 @@ img{
 
 /*************** components **************/
 
+.menu{
+    display: none;
+}
 /*************** utilities ***************/
 
 .box-shadow{
@@ -75,6 +79,9 @@ img{
     margin-right: auto;
     max-width: var(--max-width);
 }
+.cerrar-btn{
+    display: none;
+}
 
 /******************* site styles *********/
 
@@ -82,11 +89,19 @@ img{
     position: fixed;
     left: 0;
     bottom: 0;
-    height: 4rem;
+    height: var(--header-height);
+    width: 100%;
+    background-color: var(--first-color);
+    padding: 1rem;
 }
 
-.header .container{
+.header > .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.logo a{
+    color: var(--second-color);
+    font-weight: bold;
+    font-size: 2rem;
 }
