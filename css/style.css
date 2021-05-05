@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+/**************Custom Properties *****************/
+:root{
+    --first-color : #305887;
+    --first-color-alpha : rgba(48, 88, 135, 0,5);
+    --second-color : #FF444E;
+    --second-color-alpha: rgba(255, 68, 78, 0,5);
+    --white : #fff;
+    --transparent : rgba(0,0,0,.5);
+    --text-color : #222;
+    --font: 'Noto Sans JP', sans-serif;
+    --max-width:1200px;
+}
+
+/****************Reset*********************/
+
+html{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--font);
+    scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+overflow-x: hidden;
+color: var(--text-color);
+}
+
+a{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,body{
+    margin: 0;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1rem;
+}
+h5{
+    font-size: .85rem;
+}
+h6{
+    font-size: .7rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*************** components **************/
+
+/*************** utilities ***************/
+
+.box-shadow{
+    box-shadow: .25rem .25rem 1rem var(--transparent);
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+}
+
+/******************* site styles *********/
+
+.header{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 4rem;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
